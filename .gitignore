@@ -1,7 +1,11 @@
 # Unreal Engine Plugin .gitignore
 
-# Build outputs (but NOT plugin Binaries - those are needed for distribution)
-PackagedPlugin/
+# Build output directories (contains large binaries)
+build/
+UnrealClaude/build/
+
+# Exclude large PDB files in Binaries
+UnrealClaude/Binaries/Win64/*.pdb
 Intermediate/
 DerivedDataCache/
 Build/
@@ -72,6 +76,11 @@ coverage/
 
 # Debug symbols (optional - can include for debugging)
 # *.pdb
+
+# Large debug symbols in Binaries (exclude from repo)
+UnrealClaude/Binaries/Win64/*.pdb
+build/*/Binaries/*.pdb
+build/*/*/Binaries/*.pdb
 
 # Build intermediates (NOT final binaries)
 *.obj
