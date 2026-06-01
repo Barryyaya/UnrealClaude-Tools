@@ -209,7 +209,7 @@ npm install
 
 大部分代碼版權所有 © Natali Caggiano。
 
-此版本由 [Your Name] 定制，增加了：
+此版本由 Barry Huang 定制，增加了：
 - 自動化建構腳本（Build.ps1, Deploy.ps1）
 - 繁体中文文件  
 - UE 5.6/5.7 兼容性
